@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13178.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13156.2"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,17 +15,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="HomeVC" customModule="daily_dose" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PYC-DE-B4u">
-                                <rect key="frame" x="0.0" y="20" width="600" height="140"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="140"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BGImage" translatesAutoresizingMaskIntoConstraints="NO" id="hB4-xi-xWN">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="140"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eFN-om-NWk">
-                                        <rect key="frame" x="234.5" y="28" width="131.5" height="30"/>
+                                        <rect key="frame" x="122.5" y="28" width="131.5" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DAILY" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iUf-Tc-lAz">
                                                 <rect key="frame" x="0.0" y="0.0" width="63.5" height="30"/>
@@ -50,32 +54,32 @@
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="videoThumbnail" translatesAutoresizingMaskIntoConstraints="NO" id="ciV-ws-r7H">
-                                <rect key="frame" x="0.0" y="160" width="600" height="140"/>
+                                <rect key="frame" x="0.0" y="160" width="375" height="140"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="140" id="LsC-vX-n0C"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="videoThumbnail" translatesAutoresizingMaskIntoConstraints="NO" id="7MF-gY-jiH">
-                                <rect key="frame" x="0.0" y="300" width="600" height="140"/>
+                                <rect key="frame" x="0.0" y="300" width="375" height="140"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="140" id="HTR-LC-oqo"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="videoThumbnail" translatesAutoresizingMaskIntoConstraints="NO" id="jII-lC-MIq">
-                                <rect key="frame" x="0.0" y="440" width="600" height="140"/>
+                                <rect key="frame" x="0.0" y="440" width="375" height="140"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="140" id="Adg-rk-h5F"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cag-iZ-wg7">
-                                <rect key="frame" x="0.0" y="580" width="600" height="20"/>
+                                <rect key="frame" x="0.0" y="580" width="375" height="87"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NTg-53-ghC" customClass="GADBannerView">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NTg-53-ghC" customClass="GADBannerView">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="51"/>
                                         <color key="backgroundColor" red="1" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iDe-N1-d1U">
-                                        <rect key="frame" x="0.0" y="-16" width="600" height="36"/>
+                                        <rect key="frame" x="0.0" y="51" width="375" height="36"/>
                                         <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="36" id="fod-fA-FIg"/>
@@ -84,6 +88,9 @@
                                         <state key="normal" title="REMOVE ADS">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="removeAds:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lpi-OS-CSR"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.52156862749999999" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
@@ -95,9 +102,12 @@
                                     <constraint firstItem="iDe-N1-d1U" firstAttribute="leading" secondItem="Cag-iZ-wg7" secondAttribute="leading" id="Nbu-jI-YgN"/>
                                     <constraint firstAttribute="bottom" secondItem="iDe-N1-d1U" secondAttribute="bottom" id="bLN-9U-8PH"/>
                                     <constraint firstAttribute="trailing" secondItem="iDe-N1-d1U" secondAttribute="trailing" id="gF2-A5-pzS"/>
+                                    <constraint firstItem="NTg-53-ghC" firstAttribute="trailing" secondItem="iDe-N1-d1U" secondAttribute="trailing" id="gLl-we-Ij4"/>
                                     <constraint firstItem="iDe-N1-d1U" firstAttribute="top" secondItem="NTg-53-ghC" secondAttribute="bottom" id="iC5-Ye-1cu"/>
                                     <constraint firstAttribute="trailing" secondItem="iDe-N1-d1U" secondAttribute="trailing" id="ll8-f2-GeY"/>
+                                    <constraint firstItem="NTg-53-ghC" firstAttribute="leading" secondItem="iDe-N1-d1U" secondAttribute="leading" id="mfF-CT-tJd"/>
                                     <constraint firstItem="iDe-N1-d1U" firstAttribute="leading" secondItem="Cag-iZ-wg7" secondAttribute="leading" id="tyy-Pv-JsQ"/>
+                                    <constraint firstItem="NTg-53-ghC" firstAttribute="top" secondItem="Cag-iZ-wg7" secondAttribute="top" id="vG2-cc-Fy8"/>
                                     <constraint firstItem="iDe-N1-d1U" firstAttribute="top" secondItem="NTg-53-ghC" secondAttribute="bottom" id="zhB-s5-H9V"/>
                                 </constraints>
                             </view>
@@ -125,6 +135,7 @@
                     </view>
                     <connections>
                         <outlet property="bannerView" destination="NTg-53-ghC" id="Yj9-wa-dcX"/>
+                        <outlet property="removeAdsBtn" destination="iDe-N1-d1U" id="Iox-Gy-5qY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
