@@ -8,24 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		9D08813F1F3C42B5003D5966 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D08813E1F3C42B5003D5966 /* AppDelegate.swift */; };
-		9D0881411F3C42B5003D5966 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0881401F3C42B5003D5966 /* ViewController.swift */; };
+		9D0881411F3C42B5003D5966 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0881401F3C42B5003D5966 /* HomeVC.swift */; };
 		9D0881441F3C42B5003D5966 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D0881421F3C42B5003D5966 /* Main.storyboard */; };
 		9D0881461F3C42B5003D5966 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D0881451F3C42B5003D5966 /* Assets.xcassets */; };
 		9D0881491F3C42B5003D5966 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D0881471F3C42B5003D5966 /* LaunchScreen.storyboard */; };
 		9D0881521F3C47EB003D5966 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D0881511F3C47EB003D5966 /* StoreKit.framework */; };
 		9D44D7221F3C523D00314A29 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D44D7211F3C4A5A00314A29 /* GoogleMobileAds.framework */; };
+		9D44D7281F3C53EE00314A29 /* PurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D44D7271F3C53EE00314A29 /* PurchaseManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9D08813B1F3C42B5003D5966 /* daily.dose.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = daily.dose.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D08813E1F3C42B5003D5966 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9D0881401F3C42B5003D5966 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9D0881401F3C42B5003D5966 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		9D0881431F3C42B5003D5966 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9D0881451F3C42B5003D5966 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D0881481F3C42B5003D5966 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D08814A1F3C42B5003D5966 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D0881511F3C47EB003D5966 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		9D44D7211F3C4A5A00314A29 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "../../../Desktop/GoogleMobileAdsSdkiOS-7.22.0/GoogleMobileAds.framework"; sourceTree = "<group>"; };
+		9D44D7271F3C53EE00314A29 /* PurchaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +63,9 @@
 		9D08813D1F3C42B5003D5966 /* daily.dose */ = {
 			isa = PBXGroup;
 			children = (
+				9D44D7261F3C53DC00314A29 /* Services */,
+				9D44D7251F3C538500314A29 /* Controller */,
 				9D08813E1F3C42B5003D5966 /* AppDelegate.swift */,
-				9D0881401F3C42B5003D5966 /* ViewController.swift */,
 				9D0881421F3C42B5003D5966 /* Main.storyboard */,
 				9D0881451F3C42B5003D5966 /* Assets.xcassets */,
 				9D0881471F3C42B5003D5966 /* LaunchScreen.storyboard */,
@@ -78,6 +81,22 @@
 				9D0881511F3C47EB003D5966 /* StoreKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D44D7251F3C538500314A29 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9D0881401F3C42B5003D5966 /* HomeVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9D44D7261F3C53DC00314A29 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9D44D7271F3C53EE00314A29 /* PurchaseManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,7 +175,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D0881411F3C42B5003D5966 /* ViewController.swift in Sources */,
+				9D0881411F3C42B5003D5966 /* HomeVC.swift in Sources */,
+				9D44D7281F3C53EE00314A29 /* PurchaseManager.swift in Sources */,
 				9D08813F1F3C42B5003D5966 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -231,7 +251,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -282,7 +302,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -298,6 +318,7 @@
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				INFOPLIST_FILE = daily.dose/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.stefanmarkovic.daily-dose";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -314,6 +335,7 @@
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				INFOPLIST_FILE = daily.dose/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.stefanmarkovic.daily-dose";
 				PRODUCT_NAME = "$(TARGET_NAME)";
