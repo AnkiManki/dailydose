@@ -12,6 +12,7 @@
 		9D0881441F3C42B5003D5966 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D0881421F3C42B5003D5966 /* Main.storyboard */; };
 		9D0881461F3C42B5003D5966 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D0881451F3C42B5003D5966 /* Assets.xcassets */; };
 		9D0881491F3C42B5003D5966 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D0881471F3C42B5003D5966 /* LaunchScreen.storyboard */; };
+		9D0881521F3C47EB003D5966 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D0881511F3C47EB003D5966 /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		9D0881451F3C42B5003D5966 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D0881481F3C42B5003D5966 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D08814A1F3C42B5003D5966 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D0881511F3C47EB003D5966 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D0881521F3C47EB003D5966 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 			children = (
 				9D08813D1F3C42B5003D5966 /* daily.dose */,
 				9D08813C1F3C42B5003D5966 /* Products */,
+				9D0881501F3C47EB003D5966 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +66,14 @@
 				9D08814A1F3C42B5003D5966 /* Info.plist */,
 			);
 			path = daily.dose;
+			sourceTree = "<group>";
+		};
+		9D0881501F3C47EB003D5966 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D0881511F3C47EB003D5966 /* StoreKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +108,11 @@
 				TargetAttributes = {
 					9D08813A1F3C42B5003D5966 = {
 						CreatedOnToolsVersion = 9.0;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
