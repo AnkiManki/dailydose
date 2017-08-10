@@ -13,6 +13,7 @@
 		9D0881461F3C42B5003D5966 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D0881451F3C42B5003D5966 /* Assets.xcassets */; };
 		9D0881491F3C42B5003D5966 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D0881471F3C42B5003D5966 /* LaunchScreen.storyboard */; };
 		9D0881521F3C47EB003D5966 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D0881511F3C47EB003D5966 /* StoreKit.framework */; };
+		9D44D7221F3C523D00314A29 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D44D7211F3C4A5A00314A29 /* GoogleMobileAds.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D0881521F3C47EB003D5966 /* StoreKit.framework in Frameworks */,
+				9D44D7221F3C523D00314A29 /* GoogleMobileAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +295,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U52X69UCNJ;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				INFOPLIST_FILE = daily.dose/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -308,6 +311,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U52X69UCNJ;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				INFOPLIST_FILE = daily.dose/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
